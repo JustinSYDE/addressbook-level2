@@ -1,17 +1,14 @@
 package seedu.addressbook.data.person;
 
+
+import seedu.addressbook.data.person.AddressComponent;
+
 /**
  * Represents the unit of a Person's Address.
  */
 
-public class Unit {
-  private final String _value;
-
-  public Unit(String unit) {
-    this._value = unit;
-  }
-
-  public String getUnit() {
-    return this._value;
-  }
+public class Unit extends AddressComponent{
+	Unit(String value) {
+		super(value);
+	}
 }

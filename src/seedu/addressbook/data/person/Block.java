@@ -1,17 +1,13 @@
 package seedu.addressbook.data.person;
 
+import seedu.addressbook.data.person.AddressComponent;
+
 /**
  * Represents the block of a Person's Address.
  */
 
-public class Block {
-  private final String _value;
-
-  public Block(String block) {
-    this._value = block;
-  }
-
-  public String getBlock() {
-    return this._value;
+public class Block extends AddressComponent{
+  Block(String value) {
+	  super(value);
   }
 }

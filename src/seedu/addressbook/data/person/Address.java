@@ -53,7 +53,7 @@ public class Address {
 
     @Override
     public String toString() {
-        String[] componentsOfAddress = {_block.getBlock(), _street.getStreet(), _unit.getUnit(), _postalCode.getPostalCode()};
+        String[] componentsOfAddress = {_block.getValue(), _street.getValue(), _unit.getValue(), _postalCode.getValue()};
         return String.join(", ", componentsOfAddress);
     }
 

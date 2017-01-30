@@ -1,17 +1,13 @@
 package seedu.addressbook.data.person;
 
+import seedu.addressbook.data.person.AddressComponent;
+
 /**
  * Represents the postal code of a Person's Address.
  */
 
-public class PostalCode {
-  private final String _value;
-
-  public PostalCode(String postalCode) {
-    this._value = postalCode;
-  }
-
-  public String getPostalCode() {
-    return this._value;
+public class PostalCode extends AddressComponent{
+  PostalCode(String value) {
+	  super(value);
   }
 }
