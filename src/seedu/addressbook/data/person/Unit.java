@@ -10,4 +10,8 @@ public class Unit {
   public Unit(String unit) {
     this._value = unit;
   }
+
+  public String getUnit() {
+    return this._value;
+  }
 }

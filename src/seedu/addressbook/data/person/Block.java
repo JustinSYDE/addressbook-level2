@@ -10,4 +10,8 @@ public class Block {
   public Block(String block) {
     this._value = block;
   }
+
+  public String getBlock() {
+    return this._value;
+  }
 }

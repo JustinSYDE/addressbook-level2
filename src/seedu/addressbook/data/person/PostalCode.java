@@ -10,4 +10,8 @@ public class PostalCode {
   public PostalCode(String postalCode) {
     this._value = postalCode;
   }
+
+  public String getPostalCode() {
+    return this._value;
+  }
 }
