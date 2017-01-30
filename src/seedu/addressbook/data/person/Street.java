@@ -5,9 +5,9 @@ package seedu.addressbook.data.person;
  */
 
 public class Street {
-  private final String value;
+  private final String _value;
 
   public Street(String street) {
-    this.value = street;
+    this._value = street;
   }
 }

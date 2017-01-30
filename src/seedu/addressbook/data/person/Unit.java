@@ -5,9 +5,9 @@ package seedu.addressbook.data.person;
  */
 
 public class Unit {
-  private final String value;
+  private final String _value;
 
   public Unit(String unit) {
-    this.value = unit;
+    this._value = unit;
   }
 }
