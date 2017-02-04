@@ -35,4 +35,11 @@ public abstract class Contact {
     public String toString() {
         return value;
     }
+    
+    @Override
+    public boolean equals(Object other) {
+    	return other == this // short circuit if same object
+    			|| (getClass().isInstance(other) 
+    			&& this.value.equals(getClass().cast(other).value));
+    }
 }
