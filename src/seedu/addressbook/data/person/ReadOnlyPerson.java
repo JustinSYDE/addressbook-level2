@@ -2,6 +2,7 @@ package seedu.addressbook.data.person;
 
 import seedu.addressbook.data.tag.Tag;
 import seedu.addressbook.data.tag.UniqueTagList;
+import java.util.Arrays;
 
 /**
  * A read-only immutable interface for a Person in the addressbook.
@@ -83,4 +84,17 @@ public interface ReadOnlyPerson {
         }
         return builder.toString();
     }
+    
+    /**
+     * Returns a concatenated version of the printable strings of each object.
+     */
+     default String getPrintableString(Printable... printables) {
+    	 String printableString = ""; 
+    	 
+    	 for (Printable printable : printables) {
+    		 printableString += printable.getPrintableString() + "\n"; // append a newline to the end of each printable
+    	 }
+    	 
+    	 return printableString;
+     }
 }
